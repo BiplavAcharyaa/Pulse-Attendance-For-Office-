@@ -1,0 +1,13 @@
+{
+  "name": "PULSE Attendance",
+  "short_name": "PULSE",
+  "description": "Scan the office QR to check in and out.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "theme_color": "#FFFFFF",
+  "icons": [
+    { "src": "pulse-icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "pulse-icon.png", "sizes": "512x512", "type": "image/png", "purpose": "any" }
+  ]
+}

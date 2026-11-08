@@ -1,0 +1,60 @@
+:root {
+  --white: #ffffff;
+  --bg: #fafafb;
+  --bg-soft: #fcfcfd;
+  --navy: #111114;
+  --navy-2: #1c1c21;
+  --navy-3: #2a2a31;
+  --blue: #d4101f;
+  --blue-hover: #b30d1a;
+  --blue-soft: #fdecee;
+  --blue-tint: #fff6f7;
+  --red-grad: linear-gradient(135deg, #e5192a 0%, #c20d1b 100%);
+  --red-grad-hover: linear-gradient(135deg, #f02133 0%, #a90b17 100%);
+  --ink-grad: linear-gradient(135deg, #26262c 0%, #0d0d10 100%);
+  --mint: #e3f6ec;
+  --mint-strong: #3ecb8a;
+  --mint-ink: #12794b;
+  --amber: #fff3d6;
+  --amber-ink: #8a5a00;
+  --yellow: #fff3a3;
+  --yellow-ink: #6b5200;
+  --yellow-strong: #e6b800;
+  --rose: #fde8ea;
+  --rose-ink: #b1111e;
+  --orange: #ffe9d9;
+  --orange-ink: #9a3a00;
+  --grey: #f2f2f4;
+  --grey-ink: #5f5f6a;
+  --border: #ececf0;
+  --border-strong: #dcdce2;
+  --text: #1a1a1f;
+  --muted: #6b6b76;
+  --faint: #9a9aa5;
+  --radius: 16px;
+  --radius-sm: 12px;
+  --shadow: 0 1px 2px rgba(17, 17, 20, 0.04), 0 8px 24px -16px rgba(17, 17, 20, 0.14);
+  --shadow-hover: 0 2px 4px rgba(17, 17, 20, 0.05), 0 18px 36px -18px rgba(212, 16, 31, 0.28);
+  --shadow-lg: 0 24px 60px -20px rgba(17, 17, 20, 0.35);
+  --ease: cubic-bezier(0.22, 0.8, 0.3, 1);
+  --font: 'Inter Variable', 'Segoe UI Variable', 'Segoe UI', system-ui, -apple-system, Roboto, sans-serif;
+  --mono: ui-monospace, 'Cascadia Mono', 'SF Mono', Consolas, monospace;
+}
+
+* { box-sizing: border-box; }
+html, body, #root { height: 100%; margin: 0; }
+body {
+  font-family: var(--font);
+  color: var(--text);
+  background: var(--white);
+  font-size: 14px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-feature-settings: 'cv11', 'ss01';
+}
+button, input, select, textarea { font: inherit; color: inherit; }
+::selection { background: rgba(212, 16, 31, 0.16); }
+.num { font-variant-numeric: tabular-nums; }
+.mono { font-family: var(--mono); font-size: 0.92em; }
+.logo-img { display: block; border-radius: 22%; flex: none; object-fit: cover; box-shadow: 0 6px 16px -8px rgba(17, 17, 20, 0.45); }
+@media (prefers-reduced-motion: reduce) { * { animation-duration: 0.001ms !important; transition-duration: 0.001ms !important; } }
